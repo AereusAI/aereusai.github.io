@@ -5,19 +5,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const benefits = [
   {
     title: 'Enhanced Decision Making',
-    description: 'Provide leaders with comprehensive situational awareness for faster, more informed decisions.'
+    description: 'Provide commanders with comprehensive situational awareness for faster, more informed tactical decisions.'
   },
   {
     title: 'Reduced Risk',
-    description: 'Identify potential threats and vulnerabilities before they can impact operations.'
+    description: 'Identify potential threats and vulnerabilities before they can impact personnel or mission objectives.'
   },
   {
     title: 'Resource Optimization',
-    description: 'Allocate personnel and assets more efficiently based on real-time intelligence.'
+    description: 'Allocate personnel and assets more efficiently based on real-time intelligence and predictive analysis.'
   },
   {
     title: 'Predictive Analysis',
-    description: 'Anticipate changes in the operational environment through pattern recognition.'
+    description: 'Anticipate changes in the operational environment through pattern recognition and threat assessment.'
   },
   {
     title: 'Cross-domain Integration',
@@ -25,7 +25,7 @@ const benefits = [
   },
   {
     title: 'Accelerated Response',
-    description: 'Reduce the time between observation and action with automated analysis workflows.'
+    description: 'Reduce the time between observation and action with automated analysis workflows and command integration.'
   }
 ];
 
@@ -37,7 +37,7 @@ const Benefits = () => {
           <h6 className="text-primary font-medium mb-2">VALUE PROPOSITION</h6>
           <h2 className="text-3xl font-bold mb-4">Key Benefits</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Our AI-powered solutions provide significant advantages for organizations 
+            Aereus AI solutions provide significant advantages for organizations 
             requiring advanced situational awareness and tactical intelligence.
           </p>
         </div>

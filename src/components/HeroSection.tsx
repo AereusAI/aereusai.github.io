@@ -13,15 +13,15 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block mb-4 px-3 py-1 rounded-full bg-muted">
-            <span className="text-xs font-medium text-primary">Next-Generation AI Technology</span>
+            <span className="text-xs font-medium text-primary">Military-Grade AI Technology</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            AI-Powered <span className="gradient-text">Situational Awareness</span> for Critical Decision Making
+            Aereus AI <span className="gradient-text">Situational Awareness</span> for Critical Decision Making
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8">
-            Advanced models for 3D scene reconstruction and satellite sensing, providing unprecedented tactical intelligence and decision support.
+            Advanced models for 3D scene reconstruction, satellite sensing, tracking, and asset deployment, providing unprecedented tactical intelligence and decision support.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center">

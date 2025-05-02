@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <div className="flex items-center gap-2">
           <Radar className="h-6 w-6 text-primary" />
-          <span className="font-bold text-lg">SightLine</span>
+          <span className="font-bold text-lg">Aereus AI</span>
           <span className="bg-primary/10 text-primary text-xs px-2 py-0.5 rounded-full ml-2">v1.0</span>
         </div>
         
@@ -24,6 +24,7 @@ const Navbar = () => {
           <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition">Features</a>
           <a href="#models" className="text-sm text-muted-foreground hover:text-foreground transition">Models</a>
           <a href="#demos" className="text-sm text-muted-foreground hover:text-foreground transition">Demos</a>
+          <a href="#use-cases" className="text-sm text-muted-foreground hover:text-foreground transition">Use Cases</a>
           <a href="#benefits" className="text-sm text-muted-foreground hover:text-foreground transition">Benefits</a>
         </nav>
         
@@ -61,6 +62,11 @@ const Navbar = () => {
                   className="text-sm text-muted-foreground hover:text-foreground transition py-2"
                   onClick={() => setIsOpen(false)}
                 >Demos</a>
+                <a 
+                  href="#use-cases" 
+                  className="text-sm text-muted-foreground hover:text-foreground transition py-2"
+                  onClick={() => setIsOpen(false)}
+                >Use Cases</a>
                 <a 
                   href="#benefits" 
                   className="text-sm text-muted-foreground hover:text-foreground transition py-2"

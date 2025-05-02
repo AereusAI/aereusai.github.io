@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <Radar className="h-6 w-6 text-primary" />
-            <span className="font-bold text-lg">SightLine</span>
+            <span className="font-bold text-lg">Aereus AI</span>
           </div>
           
           <div className="flex gap-6">
@@ -30,7 +30,7 @@ const Footer = () => {
         
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © 2025 SightLine Nexus. All rights reserved.
+            © 2025 Aereus AI. All rights reserved.
           </p>
           
           <div className="flex gap-6">

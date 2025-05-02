@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Satellite, Box } from "lucide-react";
+import { Satellite, Box, Map, Radar } from "lucide-react";
 
 const DemoSection = () => {
   return (
@@ -11,18 +11,24 @@ const DemoSection = () => {
           <h6 className="text-primary font-medium mb-2">INTERACTIVE DEMOS</h6>
           <h2 className="text-3xl font-bold mb-4">Experience Our Models in Action</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore the capabilities of our AI models with these interactive demonstrations. 
+            Explore the capabilities of Aereus AI models with these interactive demonstrations. 
             See firsthand how they process and analyze data in real-time.
           </p>
         </div>
         
         <Tabs defaultValue="3d" className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid grid-cols-2 w-full max-w-md mx-auto mb-8">
+          <TabsList className="grid grid-cols-4 w-full max-w-3xl mx-auto mb-8">
             <TabsTrigger value="3d" className="flex items-center gap-2">
               <Box className="h-4 w-4" /> 3D Reconstruction
             </TabsTrigger>
             <TabsTrigger value="satellite" className="flex items-center gap-2">
               <Satellite className="h-4 w-4" /> Satellite Sensing
+            </TabsTrigger>
+            <TabsTrigger value="tracking" className="flex items-center gap-2">
+              <Radar className="h-4 w-4" /> Tracking Systems
+            </TabsTrigger>
+            <TabsTrigger value="deployment" className="flex items-center gap-2">
+              <Map className="h-4 w-4" /> Asset Deployment
             </TabsTrigger>
           </TabsList>
           
@@ -60,6 +66,44 @@ const DemoSection = () => {
             <div className="mt-6 bg-muted/30 rounded-lg p-4 text-sm">
               <p className="text-muted-foreground">
                 <strong>Note:</strong> This demo highlights our satellite imagery analysis system that detects changes, identifies objects, and extracts actionable intelligence from remote sensing data.
+              </p>
+            </div>
+          </TabsContent>
+          
+          <TabsContent value="tracking" className="mt-2">
+            <div className="demo-container glow-border">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center p-8">
+                  <Radar className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                  <h3 className="text-xl font-medium mb-2">Advanced Tracking Systems Demo</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Embed your tracking systems demo here. This area demonstrates real-time monitoring and tracking capabilities.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-6 bg-muted/30 rounded-lg p-4 text-sm">
+              <p className="text-muted-foreground">
+                <strong>Note:</strong> This demo showcases our advanced tracking technology that monitors multiple targets simultaneously across diverse environments, supporting time-critical operations.
+              </p>
+            </div>
+          </TabsContent>
+          
+          <TabsContent value="deployment" className="mt-2">
+            <div className="demo-container glow-border">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center p-8">
+                  <Map className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                  <h3 className="text-xl font-medium mb-2">Military Asset Deployment Demo</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Embed your asset deployment and resource allocation demo here. This area demonstrates strategic deployment planning.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-6 bg-muted/30 rounded-lg p-4 text-sm">
+              <p className="text-muted-foreground">
+                <strong>Note:</strong> This demo illustrates our resource allocation AI that optimizes asset deployment based on terrain, mission parameters, and real-time conditions.
               </p>
             </div>
           </TabsContent>
