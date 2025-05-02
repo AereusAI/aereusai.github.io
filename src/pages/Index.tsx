@@ -6,7 +6,7 @@ import ModelCard from '@/components/ModelCard';
 import DemoSection from '@/components/DemoSection';
 import Benefits from '@/components/Benefits';
 import Footer from '@/components/Footer';
-import { Satellite, Cube, Layers, Chart, Globe } from 'lucide-react';
+import { Satellite, Box, Layers, BarChart, Globe } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -32,7 +32,7 @@ const Index = () => {
               <ModelCard 
                 title="3D Scene Intelligence"
                 description="Transform standard imagery into detailed 3D models for enhanced spatial awareness and tactical planning."
-                icon={<Cube className="h-6 w-6" />}
+                icon={<Box className="h-6 w-6" />}
                 tags={["Computer Vision", "Deep Learning", "Real-time"]}
                 isHighlighted={true}
               />
@@ -73,7 +73,7 @@ const Index = () => {
               
               <div className="bg-card p-6 rounded-lg border border-border">
                 <div className="mb-4 p-2 rounded-md bg-primary/10 w-fit">
-                  <Chart className="h-6 w-6 text-primary" />
+                  <BarChart className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Predictive Analytics</h3>
                 <p className="text-muted-foreground">

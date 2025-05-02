@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Satellite, Cube } from "lucide-react";
+import { Satellite, Box } from "lucide-react";
 
 const DemoSection = () => {
   return (
@@ -19,7 +19,7 @@ const DemoSection = () => {
         <Tabs defaultValue="3d" className="w-full max-w-5xl mx-auto">
           <TabsList className="grid grid-cols-2 w-full max-w-md mx-auto mb-8">
             <TabsTrigger value="3d" className="flex items-center gap-2">
-              <Cube className="h-4 w-4" /> 3D Reconstruction
+              <Box className="h-4 w-4" /> 3D Reconstruction
             </TabsTrigger>
             <TabsTrigger value="satellite" className="flex items-center gap-2">
               <Satellite className="h-4 w-4" /> Satellite Sensing
@@ -30,7 +30,7 @@ const DemoSection = () => {
             <div className="demo-container glow-border">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
-                  <Cube className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                  <Box className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                   <h3 className="text-xl font-medium mb-2">3D Scene Reconstruction Demo</h3>
                   <p className="text-muted-foreground mb-4">
                     Embed your 3D reconstruction demo here. This area supports interactive WebGL content.
