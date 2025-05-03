@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
@@ -7,6 +6,7 @@ import DemoSection from '@/components/DemoSection';
 import Footer from '@/components/Footer';
 import UseCases from '@/components/UseCases';
 import FeatureValueSection from '@/components/FeatureValueSection';
+import TeamSection from '@/components/TeamSection';
 import { Box, Satellite, Radar, Map } from 'lucide-react';
 
 const Index = () => {
@@ -41,6 +41,7 @@ const Index = () => {
                   "Automated object recognition in 3D space"
                 ]}
                 isHighlighted={true}
+                demoId="3d"
               />
               
               <ModelCard 
@@ -54,6 +55,7 @@ const Index = () => {
                   "Automated feature extraction and classification"
                 ]}
                 isHighlighted={true}
+                demoId="satellite"
               />
               
               <ModelCard 
@@ -67,6 +69,7 @@ const Index = () => {
                   "Cross-sensor target correlation and fusion"
                 ]}
                 isHighlighted={true}
+                demoId="tracking"
               />
               
               <ModelCard 
@@ -80,6 +83,7 @@ const Index = () => {
                   "Mission-specific asset configuration suggestions"
                 ]}
                 isHighlighted={true}
+                demoId="deployment"
               />
             </div>
           </div>
@@ -88,6 +92,7 @@ const Index = () => {
         <FeatureValueSection />
         <DemoSection />
         <UseCases />
+        <TeamSection />
       </main>
       
       <Footer />

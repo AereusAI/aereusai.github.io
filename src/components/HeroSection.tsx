@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
@@ -25,11 +24,8 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg">
+            <Button size="lg" onClick={() => window.location.href = 'mailto:info@aereus.de'}>
               Request Demo
-            </Button>
-            <Button size="lg" variant="outline">
-              Technical Overview
             </Button>
           </div>
         </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Satellite, Box, Map, Radar } from "lucide-react";
@@ -18,16 +17,16 @@ const DemoSection = () => {
         
         <Tabs defaultValue="3d" className="w-full max-w-5xl mx-auto">
           <TabsList className="grid grid-cols-4 w-full max-w-3xl mx-auto mb-8">
-            <TabsTrigger value="3d" className="flex items-center gap-2">
+            <TabsTrigger value="3d" data-value="3d" className="flex items-center gap-2">
               <Box className="h-4 w-4" /> 3D Reconstruction
             </TabsTrigger>
-            <TabsTrigger value="satellite" className="flex items-center gap-2">
+            <TabsTrigger value="satellite" data-value="satellite" className="flex items-center gap-2">
               <Satellite className="h-4 w-4" /> Satellite Sensing
             </TabsTrigger>
-            <TabsTrigger value="tracking" className="flex items-center gap-2">
+            <TabsTrigger value="tracking" data-value="tracking" className="flex items-center gap-2">
               <Radar className="h-4 w-4" /> Tracking Systems
             </TabsTrigger>
-            <TabsTrigger value="deployment" className="flex items-center gap-2">
+            <TabsTrigger value="deployment" data-value="deployment" className="flex items-center gap-2">
               <Map className="h-4 w-4" /> Asset Deployment
             </TabsTrigger>
           </TabsList>

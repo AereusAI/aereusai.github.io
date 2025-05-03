@@ -1,6 +1,4 @@
-
 import React from 'react';
-import { Radar } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,21 +6,15 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <Radar className="h-6 w-6 text-primary" />
+            <img src="/Logo.png" alt="Aereus AI Logo" className="h-10 w-10" />
             <span className="font-bold text-lg">Aereus AI</span>
           </div>
           
           <div className="flex gap-6">
-            <a href="#" className="text-muted-foreground hover:text-primary transition">
-              Twitter
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition">
-              LinkedIn
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition">
-              GitHub
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition">
+            <a 
+              href="mailto:info@aereus.de" 
+              className="text-muted-foreground hover:text-primary transition"
+            >
               Contact
             </a>
           </div>
