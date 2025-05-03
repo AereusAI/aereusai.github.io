@@ -8,10 +8,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/aereusai/aereusai.github.io.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd aereusai.github.io
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -29,3 +29,14 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages at https://aereusai.github.io/ when changes are pushed to the main branch.
+
+To manually deploy the site, run:
+
+```sh
+npm run deploy
+```
+
