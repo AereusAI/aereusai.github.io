@@ -5,33 +5,33 @@
 
 @layer base {
   :root {
-    --background: 220 35% 10%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 10%; /* Charcoal */
+    --foreground: 210 100% 95%; /* Ice White */
 
-    --card: 220 35% 13%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 13%;
+    --card-foreground: 210 100% 95%;
 
-    --popover: 220 35% 10%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 210 100% 95%;
 
-    --primary: 195 85% 45%;
-    --primary-foreground: 220 35% 10%;
+    --primary: 210 100% 40%; /* Electric Blue */
+    --primary-foreground: 210 100% 95%;
 
-    --secondary: 260 60% 55%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 0 0% 75%; /* Metallic Silver */
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 220 30% 16%;
-    --muted-foreground: 210 20% 70%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 88%; /* Light Gray */
 
-    --accent: 195 85% 45%;
-    --accent-foreground: 220 35% 10%;
+    --accent: 210 100% 40%;
+    --accent-foreground: 210 100% 95%;
 
     --destructive: 0 85% 60%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 220 30% 16%;
-    --input: 220 30% 16%;
-    --ring: 195 85% 45%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 210 100% 40%;
 
     --radius: 0.5rem;
   }
@@ -50,13 +50,13 @@
 /* Custom animations */
 @keyframes glow {
   0% {
-    box-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
   }
   50% {
-    box-shadow: 0 0 20px rgba(0, 191, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 102, 204, 0.8);
   }
   100% {
-    box-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
   }
 }
 
@@ -104,3 +104,4 @@
 .code-pill {
   @apply bg-muted px-2 py-0.5 rounded-full text-xs font-mono text-muted-foreground;
 }
+

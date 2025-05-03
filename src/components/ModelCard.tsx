@@ -9,6 +9,7 @@ interface ModelCardProps {
   description: string;
   icon: React.ReactNode;
   tags: string[];
+  capabilities: string[];
   isHighlighted?: boolean;
 }
 
@@ -17,41 +18,38 @@ const ModelCard: React.FC<ModelCardProps> = ({
   description,
   icon,
   tags,
+  capabilities,
   isHighlighted = false
 }) => {
   return (
     <Card className={`h-full flex flex-col transition-all duration-300 ${isHighlighted ? 'animate-glow' : ''}`}>
       <CardHeader>
-        <div className="flex items-start justify-between">
+        <div className="flex items-start gap-4">
           <div className="p-2 rounded-md bg-primary/10 text-primary">
             {icon}
           </div>
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag, index) => (
-              <Badge key={index} variant="outline" className="text-xs">
-                {tag}
-              </Badge>
-            ))}
+          <div>
+            <CardTitle className="mt-1">{title}</CardTitle>
+            <CardDescription className="mt-2">{description}</CardDescription>
           </div>
         </div>
-        <CardTitle className="mt-4">{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
-        <ul className="space-y-2 text-sm">
-          <li className="flex items-start">
-            <span className="mr-2">•</span>
-            <span>Real-time data processing & analysis</span>
-          </li>
-          <li className="flex items-start">
-            <span className="mr-2">•</span>
-            <span>Advanced neural network architecture</span>
-          </li>
-          <li className="flex items-start">
-            <span className="mr-2">•</span>
-            <span>Optimized for edge deployment</span>
-          </li>
+        <ul className="space-y-2 text-sm mb-4">
+          {capabilities.map((capability, index) => (
+            <li key={index} className="flex items-start">
+              <span className="mr-2">•</span>
+              <span>{capability}</span>
+            </li>
+          ))}
         </ul>
+        <div className="flex flex-wrap gap-2">
+          {tags.map((tag, index) => (
+            <Badge key={index} variant="outline" className="text-xs">
+              {tag}
+            </Badge>
+          ))}
+        </div>
       </CardContent>
       <CardFooter>
         <Button className="w-full" variant={isHighlighted ? "default" : "outline"}>

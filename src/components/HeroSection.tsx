@@ -32,20 +32,6 @@ const HeroSection = () => {
               Technical Overview
             </Button>
           </div>
-          
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="bg-card/50 backdrop-blur-sm p-4 rounded-lg border border-border">
-              <div className="font-mono text-xs text-muted-foreground mb-1">CAPABILITY 01</div>
-              <h3 className="text-xl font-semibold mb-2">Real-time Adaptive Learning</h3>
-              <p className="text-sm text-muted-foreground">Continuously improves accuracy through field deployment feedback loops</p>
-            </div>
-            
-            <div className="bg-card/50 backdrop-blur-sm p-4 rounded-lg border border-border">
-              <div className="font-mono text-xs text-muted-foreground mb-1">CAPABILITY 02</div>
-              <h3 className="text-xl font-semibold mb-2">Multi-source Fusion</h3>
-              <p className="text-sm text-muted-foreground">Integrates data from multiple sensors and sources for comprehensive analysis</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
