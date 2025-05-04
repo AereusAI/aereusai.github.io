@@ -5,7 +5,7 @@ import Juanqui from "/juanqui.jpeg";
 
 const teamMembers = [
   {
-    name: "Alvaro Ritter",
+    name: "Álvaro Ritter",
     title: "Co-Founder",
     bio: "Expert in AI and computer vision with extensive experience in military applications. Led multiple projects in tactical intelligence and situational awareness systems.",
     image: Alvaro,
@@ -33,10 +33,10 @@ const TeamSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h6 className="text-primary font-medium mb-2">OUR TEAM</h6>
-          <h2 className="text-3xl font-bold mb-4">Meet the Experts</h2>
+          <h2 className="text-3xl font-bold mb-4">Meet the Founders</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Our team combines expertise in artificial intelligence, computer vision, 
-            and tactical operations to deliver cutting-edge situational awareness solutions.
+            and entrepreneurship to deliver modern solutions to the battlefield at a staggering pace.
           </p>
         </div>
         

@@ -3,11 +3,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Satellite, Box, Map, Radar } from "lucide-react";
 
 const DemoSection = () => {
+  const trackingVideoUrl = "/tracking.mp4";
+
   return (
     <section id="demos" className="py-20 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h6 className="text-primary font-medium mb-2">INTERACTIVE DEMOS</h6>
+          <h6 className="text-primary font-medium mb-2">DEMOS</h6>
           <h2 className="text-3xl font-bold mb-4">Experience Our Models in Action</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Explore the capabilities of Aereus AI models with these interactive demonstrations. 
@@ -17,22 +19,24 @@ const DemoSection = () => {
         
         <Tabs defaultValue="3d" className="w-full max-w-5xl mx-auto">
           <TabsList className="grid grid-cols-4 w-full max-w-3xl mx-auto mb-8">
-            <TabsTrigger value="3d" data-value="3d" className="flex items-center gap-2">
+            <TabsTrigger value="3d" className="flex items-center gap-2">
               <Box className="h-4 w-4" /> 3D Reconstruction
             </TabsTrigger>
-            <TabsTrigger value="satellite" data-value="satellite" className="flex items-center gap-2">
+            <TabsTrigger value="satellite" className="flex items-center gap-2">
               <Satellite className="h-4 w-4" /> Satellite Sensing
             </TabsTrigger>
-            <TabsTrigger value="tracking" data-value="tracking" className="flex items-center gap-2">
+            <TabsTrigger value="tracking" className="flex items-center gap-2">
               <Radar className="h-4 w-4" /> Tracking Systems
             </TabsTrigger>
-            <TabsTrigger value="deployment" data-value="deployment" className="flex items-center gap-2">
+            <TabsTrigger value="deployment" className="flex items-center gap-2">
               <Map className="h-4 w-4" /> Asset Deployment
             </TabsTrigger>
           </TabsList>
           
+          {/* 3D Reconstruction Tab */}
           <TabsContent value="3d" className="mt-2">
-            <div className="demo-container glow-border">
+            <div className="demo-container glow-border h-[500px]">
+              {/* Placeholder or Map3DScene component here */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
                   <Box className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
@@ -50,8 +54,9 @@ const DemoSection = () => {
             </div>
           </TabsContent>
           
+          {/* Satellite Sensing Tab */}
           <TabsContent value="satellite" className="mt-2">
-            <div className="demo-container glow-border">
+            <div className="demo-container glow-border h-[500px]">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
                   <Satellite className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
@@ -69,17 +74,21 @@ const DemoSection = () => {
             </div>
           </TabsContent>
           
+          {/* Tracking Systems Tab */}
           <TabsContent value="tracking" className="mt-2">
-            <div className="demo-container glow-border">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Radar className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                  <h3 className="text-xl font-medium mb-2">Advanced Tracking Systems Demo</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Embed your tracking systems demo here. This area demonstrates real-time monitoring and tracking capabilities.
-                  </p>
-                </div>
-              </div>
+            <div className="demo-container glow-border h-[500px] relative flex items-center justify-center">
+              <video
+                src={trackingVideoUrl}
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-lg w-full h-full object-cover bg-black"
+                onError={(e) => console.error('Video load error', e)}
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div className="mt-6 bg-muted/30 rounded-lg p-4 text-sm">
               <p className="text-muted-foreground">
@@ -88,17 +97,14 @@ const DemoSection = () => {
             </div>
           </TabsContent>
           
+          {/* Asset Deployment Tab */}
           <TabsContent value="deployment" className="mt-2">
-            <div className="demo-container glow-border">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Map className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                  <h3 className="text-xl font-medium mb-2">Military Asset Deployment Demo</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Embed your asset deployment and resource allocation demo here. This area demonstrates strategic deployment planning.
-                  </p>
-                </div>
-              </div>
+            <div className="demo-container glow-border h-[500px] overflow-hidden relative">
+              <img 
+                src="/assets.jpeg"
+                alt="Military Asset Deployment Demo" 
+                className="w-full h-full object-cover" 
+              />
             </div>
             <div className="mt-6 bg-muted/30 rounded-lg p-4 text-sm">
               <p className="text-muted-foreground">

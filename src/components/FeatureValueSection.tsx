@@ -35,7 +35,7 @@ const featureValues = [
   },
   {
     title: 'Command Integration',
-    description: 'Seamlessly integrate with existing command systems to enhance decision-making across the operational hierarchy.',
+    description: 'Seamlessly integrate with existing command systems such as ATAK or SitAware, to enhance decision-making across the operational hierarchy.',
     value: 'Cross-domain Integration',
     valueDescription: 'Seamlessly combine insights from multiple domains for a unified intelligence picture.',
     icon: <Command className="h-6 w-6 text-primary" />
