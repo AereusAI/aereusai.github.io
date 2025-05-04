@@ -7,9 +7,10 @@ const teamMembers = [
   {
     name: "Álvaro Ritter",
     title: "Co-Founder",
-    bio: "Expert in AI and computer vision with extensive experience in military applications. Led multiple projects in tactical intelligence and situational awareness systems.",
+    bio: "I'm an engineering science graduate with a focus on artificial intelligence, computer vision, and entrepreneurship. Ever since my time at the EYP, I have been passionate about European resilience and driven by the change young builders can achieve.",
     image: Alvaro,
     social: {
+      twitter: "https://x.com/alvaro_ritter",
       linkedin: "https://www.linkedin.com/in/alvaro-ritter/",
       github: "https://github.com/alvaroritter"
     }
@@ -17,7 +18,7 @@ const teamMembers = [
   {
     name: "Juan Carlos Climent Pardo",
     title: "Co-Founder",
-    bio: "Specialist in deep learning and geospatial analysis with a background in satellite imagery processing. Previously developed advanced tracking systems for defense applications.",
+    bio: "I am passionate AI and robotics engineer, putting all of my energy into working on impact-driven ideas. I have always been fascinated by how technology can change our way of living, and firmly believe that now is the time to double down on Europe's resilience.",
     image: Juanqui,
     social: {
       twitter: "https://x.com/jcliment55",
