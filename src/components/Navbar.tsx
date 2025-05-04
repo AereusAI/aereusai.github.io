@@ -24,7 +24,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <div className="flex items-center gap-2">
-          <img src="/Logo.png" alt="Aereus AI Logo" className="h-10 w-10" />
+          <img src="/Logo+Inverted.png" alt="Aereus AI Logo" className="h-10 w-10" />
           <span className="font-bold text-lg">Aereus AI</span>
           <span className="bg-primary/10 text-primary text-xs px-2 py-0.5 rounded-full ml-2">v1.01</span>
         </div>

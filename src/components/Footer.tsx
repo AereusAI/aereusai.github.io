@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <img src="/Logo.png" alt="Aereus AI Logo" className="h-10 w-10" />
+            <img src="/Logo+Inverted.png" alt="Aereus AI Logo" className="h-10 w-10" />
             <span className="font-bold text-lg">Aereus AI</span>
           </div>
           
