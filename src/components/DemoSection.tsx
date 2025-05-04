@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Satellite, Box, Map, Radar } from "lucide-react";
 
 const DemoSection = () => {
-  const trackingVideoUrl = "/tracking.mp4";
+  const trackingVideoUrl = "/demos/tracking.mp4";
 
   return (
     <section id="demos" className="py-20 relative">
@@ -101,7 +101,7 @@ const DemoSection = () => {
           <TabsContent value="deployment" className="mt-2">
             <div className="demo-container glow-border h-[500px] overflow-hidden relative">
               <img 
-                src="/assets.jpeg"
+                src="/demos/assets.jpeg"
                 alt="Military Asset Deployment Demo" 
                 className="w-full h-full object-cover" 
               />
