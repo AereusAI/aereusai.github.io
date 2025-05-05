@@ -4,6 +4,7 @@ import { Satellite, Box, Map, Radar } from "lucide-react";
 
 const DemoSection = () => {
   const trackingVideoUrl = "/demos/tracking.mp4";
+  const reconstructionVideoUrl = "/demos/reconstruction.mp4";
 
   return (
     <section id="demos" className="py-20 relative">
@@ -35,17 +36,19 @@ const DemoSection = () => {
           
           {/* 3D Reconstruction Tab */}
           <TabsContent value="3d" className="mt-2">
-            <div className="demo-container glow-border h-[500px]">
-              {/* Placeholder or Map3DScene component here */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Box className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                  <h3 className="text-xl font-medium mb-2">3D Scene Reconstruction Demo</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Embed your 3D reconstruction demo here. This area supports interactive WebGL content.
-                  </p>
-                </div>
-              </div>
+            <div className="demo-container glow-border h-[500px] relative flex items-center justify-center">
+              <video
+                src={reconstructionVideoUrl}
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-lg w-full h-full object-cover bg-black"
+                onError={(e) => console.error('Video load error', e)}
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div className="mt-6 bg-muted/30 rounded-lg p-4 text-sm">
               <p className="text-muted-foreground">
@@ -56,16 +59,12 @@ const DemoSection = () => {
           
           {/* Satellite Sensing Tab */}
           <TabsContent value="satellite" className="mt-2">
-            <div className="demo-container glow-border h-[500px]">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Satellite className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                  <h3 className="text-xl font-medium mb-2">Satellite Sensing Demo</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Embed your satellite sensing and analysis demo here. This area supports map visualization and imagery analysis.
-                  </p>
-                </div>
-              </div>
+            <div className="demo-container glow-border h-[500px] overflow-hidden relative">
+              <img 
+                src="/demos/satellite.png"
+                alt="Military Asset Deployment Demo" 
+                className="w-full h-full object-cover" 
+              />
             </div>
             <div className="mt-6 bg-muted/30 rounded-lg p-4 text-sm">
               <p className="text-muted-foreground">
@@ -101,7 +100,7 @@ const DemoSection = () => {
           <TabsContent value="deployment" className="mt-2">
             <div className="demo-container glow-border h-[500px] overflow-hidden relative">
               <img 
-                src="/demos/assets.jpeg"
+                src="/demos/assets.png"
                 alt="Military Asset Deployment Demo" 
                 className="w-full h-full object-cover" 
               />
