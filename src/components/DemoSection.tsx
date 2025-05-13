@@ -5,6 +5,7 @@ import { Satellite, Box, Map, Radar } from "lucide-react";
 const DemoSection = () => {
   const trackingVideoUrl = "/demos/tracking.mp4";
   const reconstructionVideoUrl = "/demos/reconstruction.mp4";
+  const informationGatheringVideoUrl = "/demos/tactical_intel.mp4";
 
   return (
     <section id="demos" className="py-20 relative">
@@ -18,8 +19,11 @@ const DemoSection = () => {
           </p>
         </div>
         
-        <Tabs defaultValue="3d" className="w-full max-w-5xl mx-auto">
+        <Tabs defaultValue="deployment" className="w-full max-w-5xl mx-auto">
           <TabsList className="grid grid-cols-4 w-full max-w-3xl mx-auto mb-8">
+            <TabsTrigger value="deployment" className="flex items-center gap-2">
+              <Map className="h-4 w-4" /> Tactical Intelligence
+            </TabsTrigger>
             <TabsTrigger value="3d" className="flex items-center gap-2">
               <Box className="h-4 w-4" /> 3D Reconstruction
             </TabsTrigger>
@@ -29,10 +33,30 @@ const DemoSection = () => {
             <TabsTrigger value="tracking" className="flex items-center gap-2">
               <Radar className="h-4 w-4" /> Tracking Systems
             </TabsTrigger>
-            <TabsTrigger value="deployment" className="flex items-center gap-2">
-              <Map className="h-4 w-4" /> Asset Deployment
-            </TabsTrigger>
           </TabsList>
+          
+          {/* Information Gathering Tab */}
+          <TabsContent value="deployment" className="mt-2">
+            <div className="demo-container glow-border h-[500px] overflow-hidden relative">
+              <video
+                src={informationGatheringVideoUrl}
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-lg w-full h-full object-cover bg-black"
+                onError={(e) => console.error('Video load error', e)}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="mt-6 bg-muted/30 rounded-lg p-4 text-sm">
+              <p className="text-muted-foreground">
+                <strong>Note:</strong> This demo illustrates our tactical intelligence system that optimizes regional information recollection and assessment based on terrain, mission parameters, and real-time conditions.
+              </p>
+            </div>
+          </TabsContent>
           
           {/* 3D Reconstruction Tab */}
           <TabsContent value="3d" className="mt-2">
@@ -92,22 +116,6 @@ const DemoSection = () => {
             <div className="mt-6 bg-muted/30 rounded-lg p-4 text-sm">
               <p className="text-muted-foreground">
                 <strong>Note:</strong> This demo showcases our advanced tracking technology that monitors multiple targets simultaneously across diverse environments, supporting time-critical operations.
-              </p>
-            </div>
-          </TabsContent>
-          
-          {/* Asset Deployment Tab */}
-          <TabsContent value="deployment" className="mt-2">
-            <div className="demo-container glow-border h-[500px] overflow-hidden relative">
-              <img 
-                src="/demos/assets.png"
-                alt="Military Asset Deployment Demo" 
-                className="w-full h-full object-cover" 
-              />
-            </div>
-            <div className="mt-6 bg-muted/30 rounded-lg p-4 text-sm">
-              <p className="text-muted-foreground">
-                <strong>Note:</strong> This demo illustrates our resource allocation AI that optimizes asset deployment based on terrain, mission parameters, and real-time conditions.
               </p>
             </div>
           </TabsContent>

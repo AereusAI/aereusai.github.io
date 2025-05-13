@@ -16,6 +16,20 @@ const ModelSection = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ModelCard 
+              title="Tactical Intelligence"
+              description="Optimize regional information recollection from different sources and assessment of environmental conditions."
+              icon={<Map className="h-6 w-6" />}
+              tags={["Resource Optimization", "Decision Support", "Tactical Planning"]}
+              capabilities={[
+              "Multi-sensor data fusion",
+              "Real-time information processing",
+              "Mission-specific assessment"
+              ]}
+              isHighlighted={true}
+              demoId="deployment"
+          />
+          
+          <ModelCard 
               title="3D Scene Intelligence"
               description="Transform standard imagery into detailed 3D models for enhanced spatial awareness and tactical planning."
               icon={<Box className="h-6 w-6" />}
@@ -55,20 +69,6 @@ const ModelSection = () => {
               ]}
               isHighlighted={true}
               demoId="tracking"
-          />
-          
-          <ModelCard 
-              title="Strategic Asset Deployment"
-              description="Optimize resource allocation and deployment of assets based on mission parameters and environmental conditions."
-              icon={<Map className="h-6 w-6" />}
-              tags={["Resource Optimization", "Decision Support", "Tactical Planning"]}
-              capabilities={[
-              "AI-driven deployment recommendations",
-              "Real-time resource allocation optimization",
-              "Mission-specific asset configuration suggestions"
-              ]}
-              isHighlighted={true}
-              demoId="deployment"
           />
           </div>
       </div>
